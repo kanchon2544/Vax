@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับสำนักงาน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        /* สไตล์เมนู Dropdown */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0056b3;
+            min-width: 200px;
+        }
+
+        .dropdown-menu li {
+            width: 100%;
+        }
+
+        .dropdown-menu li a {
+            padding: 10px;
+            display: block;
+            color: white;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #003c80;
+        }
+
+        /* แสดงเมนูเมื่อวางเมาส์ */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">เกี่ยวกับสำนักงาน</a>
+                <ul class="dropdown-menu">
+                    <li><a href="history.html">ประวัติกรมสรรพสามิต</a></li>
+                    <li><a href="mission.html">วิสัยทัศน์ พันธกิจ ยุทธศาสตร์</a></li>
+                    <li><a href="policy.html">ทำเนียบผู้บริหาร</a></li>
+                    <li><a href="structure.html">โครงสร้างองค์กร</a></li>
+                    <li><a href="ethics.html">ธรรมาภิบาลข้อมูล</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">ห้องข่าว</a></li>
+            <li><a href="work.html">งานของหน่วยงาน</a></li>
+            <li><a href="tax.html">ประชาชน/ผู้เสียภาษี</a></li>
+        </ul>
+    </nav>
+
+    <h1>เกี่ยวกับสำนักงาน</h1>
+    <p>เนื้อหาเกี่ยวกับสำนักงาน...</p>
+</body>
+</html>
