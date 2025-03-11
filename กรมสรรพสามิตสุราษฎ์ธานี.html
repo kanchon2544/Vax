@@ -11,13 +11,10 @@
             padding: 0;
         }
         header {
-            background-image: url(jack.jpg) no-repeat center; 
-            background-size: cover;
             background-color: #0056b3;
             color: white;
             text-align: center;
-            padding: 10px;
-            margin: 10px;
+            padding: 20px;
             position: relative;
         }
         .logo {
@@ -36,10 +33,40 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            padding: 10px;
+            display: inline-block;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
         }
+
+        /* ========== สไตล์ของ Dropdown Menu ========== */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         .content {
             padding: 20px;
             text-align: center;
@@ -48,16 +75,23 @@
 </head>
 <body>
     <header>
-        <img src="jack.jpg" alt="logo">
         <h1>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</h1>
-        <script>
-            console.log("สนง.สรรพสามิตพื้นที่สุราษฎร์ธานี")
-        </script>
     </header>
 
     <nav>
         <a href="index.html">หน้าหลัก</a>
-        <a href="about.html">เกี่ยวกับสำนักงาน</a>
+
+        <!-- เมนู "เกี่ยวกับสำนักงาน" พร้อม Dropdown -->
+        <div class="dropdown">
+            <a href="about.html">เกี่ยวกับสำนักงาน ▼</a>
+            <div class="dropdown-content">
+                <a href="history.html">ประวัติสำนักงาน</a>
+                <a href="structure.html">โครงสร้างองค์กร</a>
+                <a href="vision.html">วิสัยทัศน์และพันธกิจ</a>
+                <a href="policy.html">แผนยุทธศาสตร์</a>
+            </div>
+        </div>
+
         <a href="news.html">ห้องข่าว</a>
         <a href="work.html">งานของหน่วยงาน</a>
         <a href="tax.html">ประชาชน/ผู้เสียภาษี</a>
@@ -72,3 +106,4 @@
     </div>
 </body>
 </html>
+
