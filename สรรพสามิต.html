@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สำนักงานสรรพสามิตสุราษฎร์ธานี</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* ส่วนของ Header */
+        .header {
+            background: url('jack.jpg') no-repeat center;
+            background-size: cover;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            height: 60px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: #2d6fb7;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            background: #ffcc00;
+            color: black;
+        }
+        /* ส่วนของไอคอนด้านขวา */
+        .icons {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .icons img {
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ส่วนหัวเว็บ -->
+    <div class="header">
+        <img src="jack.jpg" alt="โลโก้" class="logo">
+        <h1>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</h1>
+        <h3>Suratthani Area Excise Office</h3>
+        <div class="icons">
+            <img src="icon-a+.png" alt="เพิ่มขนาดตัวอักษร">
+            <img src="icon-a-.png" alt="ลดขนาดตัวอักษร">
+            <img src="icon-lang.png" alt="เปลี่ยนภาษา">
+            <img src="icon-fb.png" alt="Facebook">
+            <img src="icon-email.png" alt="Email">
+            <img src="icon-search.png" alt="ค้นหา">
+        </div>
+    </div>
+
+    <!-- แถบเมนู -->
+    <div class="menu">
+        <a href="#">หน้าหลัก</a>
+        <a href="#">เกี่ยวกับสำนักงาน</a>
+        <a href="#">ห้องข่าว</a>
+        <a href="#">งานของหน่วยงาน</a>
+        <a href="#">ประชาชน/ผู้เสียภาษี</a>
+        <a href="#">บริการอิเล็กทรอนิกส์</a>
+        <a href="#">ดาวน์โหลด</a>
+        <a href="#">ติดต่อสอบถาม</a>
+    </div>
+    
+
+</body>
+</html>
